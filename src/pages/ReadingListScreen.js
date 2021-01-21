@@ -26,7 +26,7 @@ const ReadingListScreen = ({ navigation }) => {
     )
   }
   return (
-    <SafeAreaView styles={{ flex: 1 }}>
+    <SafeAreaView styles={{ flex: 1, backgroundColor: 'white' }}>
       <Header
         headerTitle={"My Reading"}
         onPressLeft={() => navigation.goBack()} />

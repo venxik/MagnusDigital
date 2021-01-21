@@ -23,6 +23,7 @@ const topInset =  isIphoneX ? iphoneXTopInset : 0;
 const toolBarHeight = initToolbarHeight + topInset + paddingTop
 
 export {
+  ios,
   horizontal,
   vertical,
   allPadding,

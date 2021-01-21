@@ -9,7 +9,7 @@ import {
   Image,
 } from 'react-native';
 import {StackActions} from '@react-navigation/native';
-import {DeviceHeight, DeviceWidth} from '../config/config_layout';
+import {DeviceHeight, DeviceWidth, ios} from '../config/config_layout';
 
 const LoginScreen = ({navigation}) => {
   const [username, setUsername] = useState('');
@@ -35,7 +35,7 @@ const LoginScreen = ({navigation}) => {
           placeholder="username"
           value={username}
           onChangeText={(e) => setUsername(e)}
-          style={{paddingLeft: 10}}
+          style={{paddingLeft: 10}, ios ? {paddingVertical: 10} : null}
         />
       </View>
       <View style={styles.textInputContainer}>
@@ -43,7 +43,7 @@ const LoginScreen = ({navigation}) => {
           placeholder="password"
           value={password}
           onChangeText={(e) => setPassword(e)}
-          style={{paddingLeft: 10}}
+          style={{paddingLeft: 10}, ios ? {paddingVertical: 10} : null}
           secureTextEntry={true}
         />
       </View>

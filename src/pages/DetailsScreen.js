@@ -132,6 +132,7 @@ const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
     paddingTop: STATUS_BAR_HEIGHT,
+    backgroundColor: 'white'
   },
   mainImage: {
     width: '140%',
